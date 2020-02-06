@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p>Klik på knappen og se hvor meget CO2 du bruger på en flyrejse</p>
+    <button id="button">Prøv</button>
+    <script>
+        document.querySelector("#button").addEventListener("click", button_clicked);
+
+        function button_clicked() {
+            let hours = 3;
+            let co2Brug = hours * 109;
+
+            console.log("Ved " + hours + " timers flyrejse har du udledt " + co2Brug + " kg CO2");
+        }
+
+    </script>
+</body>
+
+</html>
